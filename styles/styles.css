@@ -279,6 +279,9 @@ svg {
   padding: 8px 0 19px;
   margin-top: 20px;
 }
+.dropdown-display{
+  display: block;
+}
 
 .dropdown-content-right a:hover {background-color: #ddd;}
 .dropdown-content-left a:hover {background-color: #ddd;}

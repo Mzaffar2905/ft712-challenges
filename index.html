@@ -391,24 +391,7 @@
         const navbar = document.querySelector(".navbar");
         const navWrapper = document.querySelector(".nav-wrapper")
         const dropdown = document.querySelector(".dropdown")
-        const dropdownbutton = document.querySelector(".dropdown-content-left")
-            dropdown.addEventListener('click', () => {
-            if (dropdownbutton.style.display === "none") {
-              dropdownbutton.style.display = "block";
-            } else {
-              dropdownbutton.style.display = "none";
-            };
-          });
-          const dropdownlist = document.querySelector(".dropdown-content-right")
-            dropdown.addEventListener('click', () => {
-            if (dropdownlist.style.display === "none") {
-              dropdownlist.style.display = "block";
-            } else {
-              dropdownlist.style.display = "none";
-            };
-          });
-
-          
+ 
         window.addEventListener("scroll", () => {
         if (window.scrollY >= window.innerHeight / 4) {
             navbar.classList.add("navbar-white");
@@ -418,6 +401,37 @@
             navWrapper.classList.remove("top");
         }
         });
+
+       // const dropdownbutton = document.querySelector(".dropdown-content-left")
+       //    dropdown.addEventListener("mouseover", () => {
+       //     dropdownbutton.style.display = "flex";
+       //       dropdownbutton.style.display = "block";
+       //    })
+       //       dropdown.addEventListener("mouseleave", () => {
+       //       dropdownbutton.style.display = "none";
+       //   });
+          //-------------------------------------------
+     
+          const dropitemsL = document.querySelectorAll(".left-menu .dropdown")
+          const dropitemsR = document.querySelectorAll(".right-menu .dropdown")
+          const dropcontentL = document.querySelector(".dropdown-content-left")
+          const dropcontentR = document.querySelector(".dropdown-content-right")
+          dropitemsL.forEach((items) => {
+            items.addEventListener("mouseover", () => {
+            dropcontentL.style.display = "block";
+          })
+            items.addEventListener("mouseleave", () => {
+              dropcontentL.style.display = "none";
+         });
+          });
+          dropitemsR.forEach((content) => {
+            content.addEventListener("mouseover", () => {
+            dropcontentR.style.display = "block";
+          })
+            content.addEventListener("mouseleave", () => {
+              dropcontentR.style.display = "none";
+         });
+          });
     </script>
   </body>
 </html>
