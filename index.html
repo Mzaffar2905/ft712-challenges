@@ -390,6 +390,25 @@
       // ***navbar JS***
         const navbar = document.querySelector(".navbar");
         const navWrapper = document.querySelector(".nav-wrapper")
+        const dropdown = document.querySelector(".dropdown")
+        const dropdownbutton = document.querySelector(".dropdown-content-left")
+            dropdown.addEventListener('click', () => {
+            if (dropdownbutton.style.display === "none") {
+              dropdownbutton.style.display = "block";
+            } else {
+              dropdownbutton.style.display = "none";
+            };
+          });
+          const dropdownlist = document.querySelector(".dropdown-content-right")
+            dropdown.addEventListener('click', () => {
+            if (dropdownlist.style.display === "none") {
+              dropdownlist.style.display = "block";
+            } else {
+              dropdownlist.style.display = "none";
+            };
+          });
+
+          
         window.addEventListener("scroll", () => {
         if (window.scrollY >= window.innerHeight / 4) {
             navbar.classList.add("navbar-white");
