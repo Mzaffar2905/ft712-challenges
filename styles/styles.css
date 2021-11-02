@@ -18,9 +18,21 @@ li > a:hover {
 
 .team-text-section {
   width: 50%;
+  text-align: justify;
+  text-justify: inter-word;
+  padding-left: 25px;
+  
 
 }
 .content-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  height: auto;
+  padding: 50px;
+  
+  
  
 }
 
