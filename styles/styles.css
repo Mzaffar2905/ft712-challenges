@@ -18,6 +18,10 @@ li > a:hover {
 
 .team-text-section {
   width: 50%;
+
+}
+.content-section{
+ 
 }
 
 .nav-wrapper {
@@ -75,7 +79,7 @@ li > a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url('/images/hero.jpg');
+  background-image: url('../images/hero.jpg');
   background-position: center;
   background-size: cover;
   height: 100vh;
