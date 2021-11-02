@@ -17,10 +17,12 @@ li > a:hover {
 }
 
 .team-text-section {
-  width: 50%;
+  width: 35%;
   text-align: justify;
   text-justify: inter-word;
   padding-left: 25px;
+  padding-bottom: 230px;
+  font-family: 'Open Sans', sans-serif;
   
 
 }
@@ -202,6 +204,14 @@ svg {
   width: 50vw;
 }
 
+.newsletter-bloc{
+  background-color: #303030;
+  display: flex;
+  width: 80%;
+  margin-left: 60px;
+
+}
+
 .card-category {
   margin: 60px 15px 60px 15px;
   width: 28%;
@@ -237,6 +247,8 @@ svg {
   display: flex;
   flex-direction: column;
   align-items: start;
+  padding-left: 30px;
+  margin-top: 30px;
 }
 
 .module-title {
@@ -250,6 +262,8 @@ svg {
   justify-content: center;
   align-items: center;
   margin-bottom: 3rem;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
 .input-element {
@@ -275,6 +289,9 @@ svg {
   font-size: large;
   color: cadetblue;
 }
+.email-bloc{
+ 
+}
 
 .submit-button:hover {
   color: white;
@@ -294,6 +311,10 @@ svg {
 }
 
 .pf-wrapper {
+  flex: 1 1 150px;
+      display: flex;
+      padding-top: 50px;
+      padding-bottom: 60px;
 }
 
 .footer {
