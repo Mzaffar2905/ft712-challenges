@@ -207,9 +207,11 @@ svg {
 .newsletter-bloc{
   background-color: #303030;
   display: flex;
+  justify-content: space-between;
   width: 80%;
-  margin-left: 150px;
+  margin-left:150px;
   margin-bottom: 40px;
+  align-items: center;
 
 }
 .email-bloc{
@@ -252,7 +254,7 @@ svg {
   flex-direction: column;
   align-items: start;
   padding-left: 30px;
-  margin-top: 30px;
+  
 }
 
 .module-title {
@@ -271,7 +273,7 @@ svg {
 }
 
 .input-element {
-  width: 25rem;
+  width: 80%;
   padding: 1.2rem;
   border-radius: 15px 0 0 15px;
   background-color: #ddd;
@@ -287,6 +289,7 @@ svg {
   padding: 19px 35px;
   border-radius: 0 15px 15px 0;
   z-index: 1;
+  margin-left: 0px;
 }
 
 .module-text {
@@ -302,7 +305,8 @@ svg {
 
 .news-module-bg {
   width: 760px;
-  height: 320px;
+  height: 100%;
+  object-fit: cover;
 }
 
 .news_footer {
@@ -330,6 +334,27 @@ svg {
 }
 .dropdown-display{
   display: block;
+}
+
+#pointer{
+    width: 0; 
+    height: 0; 
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid white;
+    position: absolute;
+    top: 65px;
+
+}
+#pointer-child{
+  width: 0; 
+  height: 0; 
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 20px solid #303030;
+  position: absolute;
+  top: 65px;
+  left: -1px;
 }
 
 .dropdown-content-right a:hover {background-color: #ddd;}
