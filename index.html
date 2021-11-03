@@ -21,7 +21,6 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
       
-        @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
     
     />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -83,7 +82,7 @@
                         <a href="#">Grand Baie</a>
                         </div>
                     </li>
-                    <li><a href="#">Your Account</a></li>
+                    <li><a class="account" href="#">Your Account</a></li>
                 </ul>
             </div>
         </div>
@@ -393,7 +392,6 @@
       // ***navbar JS***
         const navbar = document.querySelector(".navbar");
         const navWrapper = document.querySelector(".nav-wrapper")
-        const dropdown = document.querySelector(".dropdown")
  
         window.addEventListener("scroll", () => {
         if (window.scrollY >= window.innerHeight / 4) {
@@ -405,7 +403,16 @@
         }
         });
 
-     
+        const emailinput = document.querySelector(".input-element");
+        const submitbutton = document.querySelector(".submit-button");
+        //const form = document.querySelector(".form");
+        const account = document.querySelector(".account")
+        submitbutton.addEventListener("click", (event) => {
+           event.preventDefault();   
+           account.innerHTML = emailinput.value;
+        })
+
+
           // const dropitemsL = document.querySelectorAll(".left-menu .dropdown")
           // const dropitemsR = document.querySelectorAll(".right-menu .dropdown")
           // const dropcontentL = document.querySelector(".dropdown-content-left")

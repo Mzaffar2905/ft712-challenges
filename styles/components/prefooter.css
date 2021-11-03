@@ -44,3 +44,11 @@ i {
   color: aliceblue;
   font-weight: 600;
 }
+
+.pf-wrapper {
+  flex: 1 1 150px;
+      display: flex;
+      padding-top: 50px;
+      padding-bottom: 60px;
+}
+

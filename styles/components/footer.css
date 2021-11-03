@@ -1,0 +1,33 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border-top: 1px solid #a5a5a5;
+  padding: 8px 0 19px;
+ 
+}
+.dropdown-display{
+  display: block;
+}
+
+#pointer{
+    width: 0; 
+    height: 0; 
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid white;
+    position: absolute;
+    top: 65px;
+
+}
+#pointer-child{
+  width: 0; 
+  height: 0; 
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 20px solid #303030;
+  position: absolute;
+  top: 65px;
+  left: -1px;
+}
